@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Temperature Converstion</title>
+    <style>
+        input[type=submit] {
+            background-color: rgb(0, 110, 255);
+            color: white;
+            padding: .5rem 10rem;
+            border-radius: 500px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigBox">
+        <h1>Temperature convertor</h1>
+        <br>
+        <form id="Temperature_conversion" onsubmit="convertTemp(); return false">
+            <!--return false to avoid automatic submission-->
+            <label for="temp">Enter temperature: </label>
+            <input type="number" name="temp" id="temp" placeholder=" Value of temp">
+
+            <select name="temp_diff" title="temp_diff" id="temp_diff">
+                <option value="celsuis">Celsuis</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <br><br>
+            <input type="submit" name="temp">
+            <br> <br>
+            <div id="align-output">
+                <pre>The Value After Converstion:  </pre>
+                <p id="output_result"></p>
+            </div>
+        </form>
+        <br>
+        <p>Designed By Pratham Asrani</p>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

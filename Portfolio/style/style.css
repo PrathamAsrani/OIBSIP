@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color: rgb(28, 18, 18);
+    --primary-shades: blue;
+    --para-color: #383c53;
+    --helper-color: #1264fa;
+    --white: #fff;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block; /*to use margin padding properly*/
+    color: black;
+    font-weight: 600;
+}
+
+img{
+    display: inline-block; /*to use margin padding properly*/
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: var(--primary-color);
+}
+
+.para{
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--para-color);
+}
+
+.header{
+    min-height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    box-shadow: 0 0 0.2vw 0 rgba(0, 0, 0, 0.8), 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.5rem;
+    transition: all 0.3s linear;
+}   
+
+.navbar-list .navbar-link:hover,
+.navbar-list .navbar-link:active{
+    color: var(--helper-color);
+    text-decoration: underline;
+}
+
+.mobile-nav-icon{
+    font-size: 4rem;
+}
+
+.mobile-navbar-btn{
+    display: none;
+}
+
+.mobile-nav-icon[name = "close"]{
+    display: none;
+}
+
+.icons {
+    width: 30vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1vw;
+    /* padding-left: 5vw; */
+}
+
+span {
+    color: #28bf95;
+}
+
+h1.primary-heading {
+    font-size: 3rem;
+}
+
+.icons-button{
+    padding: 1.2rem 2.4rem;
+    background-color: var(--white);
+    border: 1px solid var(--helper-color);
+    color: var(--helper-color);
+    border-radius: 10rem;
+}
+
+.icons-button:hover,
+.icons-button:active{
+    background-color: rgb(87, 187, 220);
+    color: var(--white);
+}
+
+.container{
+    padding-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.objective{
+    width: 20rem;
+    color: var(--para-color);
+}
+
+.logos{
+    font-size: 3rem;
+}
+
+.icons-2 {
+    width: 30vw;
+    /* background-color: red; */
+    display: flex;
+    gap: 8rem;
+    padding-top: 1rem;
+}
+
+.separation{
+    width: 5%;
+    height: 0px;
+    background-color: transparent;
+    border-color: grey;
+    border-style: dotted none none;
+    border-width: 0.5vw;
+}
+
+.sep{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-About{
+    background-color: #fff;
+    /* padding-bottom: 5vw; */
+}
+
+.section-About h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.section-About h3{
+    font-size: 2rem;
+}
+
+.section-About p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+#main_p1{
+    padding-top: 2rem;
+}
+
+.section-Skills{
+    padding-top: 2rem;
+    display: flex;
+    /* background-color: #28bf95; */
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.skill-bar{
+    width: 30vw;
+    /* background-color: #1264fa; */
+    border: 2px solid black;
+    border-radius: 2vw;
+    padding: 1.5rem 2rem;
+    box-shadow: 0.5rem .5rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+.skill-bar li{
+    margin: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar li .progress-line{
+    height: 1rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.symbols{
+    color: white;
+    display: flex;
+    width: 20vw;
+    justify-content: space-around;
+}
+
+#name{
+    color: blue;
+}
